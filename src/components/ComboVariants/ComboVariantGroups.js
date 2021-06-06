@@ -32,10 +32,10 @@ export default function ComboVariantGroups() {
     }, []);
 
     const pageCount = comboGroups ? Math.ceil(comboGroups.length/showValue) : 0;
-    const pages = _.range(1, 1 + 1);
+    const pages = _.range(1, pageCount + 1);
 
     const redirectToVariantGruop = (groupId) => {
-        history.push(`/combo-group?${groupId}`);
+        history.push(`/combo-group?groupId=${groupId}`);
     }
 
     const addComboGroup = () => {

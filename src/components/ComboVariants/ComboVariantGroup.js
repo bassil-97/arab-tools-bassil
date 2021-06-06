@@ -6,11 +6,14 @@ import InfoIcon from '@material-ui/icons/Info';
 
 import axios from 'axios';
 
-export default function ComboVariantGroup({ groupId }) {
+export default function ComboVariantGroup() {
 
     const [comboGroup, setComboGroup] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     const [showValue, setShowValue] = useState("100");
+
+    const urlParams = new URLSearchParams(queryString);
+    const groupId = urlParams.get('groupId');
 
     useEffect(()=> {
         axios.get(`http://arabtools.techtsy.tech/api/v1/inventory/variant/group/${groupId}`, {
