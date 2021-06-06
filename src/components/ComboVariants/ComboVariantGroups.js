@@ -43,7 +43,7 @@ export default function ComboVariantGroups() {
     }
 
     const deleteVariantGroup = (groupId) => {
-        axios.delete(`http://arabtools.techtsy.tech/api/v1/inventory/variant/group/${groupId}`, {
+        axios.delete(`https://arabtools.techtsy.tech/api/v1/inventory/variant/group/${groupId}`, {
             headers: {
                 'Authorization': 'Token ebb9ad8858809915f403b1f262d3d3f8095fc1f1'
             }

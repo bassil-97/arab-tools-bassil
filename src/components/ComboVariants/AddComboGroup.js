@@ -11,7 +11,7 @@ export default function AddComboGroup(props) {
     const [multiSelections, setMultiSelections] = useState([]);
 
     useEffect(()=> {
-        const fetchGroups = async ()=> axios.get("http://arabtools.techtsy.tech/api/v1/inventory/variant/group", {
+        const fetchGroups = async ()=> axios.get("https://arabtools.techtsy.tech/api/v1/inventory/variant/group", {
             headers: {
                 'Authorization': 'Token ebb9ad8858809915f403b1f262d3d3f8095fc1f1'
             }

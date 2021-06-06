@@ -13,7 +13,7 @@ export default function AddComboVariants() {
     const handleAddComboVariants = (e) => {
         e.preventDefault();
 
-        axios.post("http://arabtools.techtsy.tech/api/v1/inventory/variant/group/", {
+        axios.post("https://arabtools.techtsy.tech/api/v1/inventory/variant/group/", {
             coverCap,
             collisionMeasurement,
             mountingPlate,
