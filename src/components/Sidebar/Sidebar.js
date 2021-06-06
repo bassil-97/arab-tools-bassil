@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import avatar2 from '../../images/user/avatar-2.jpg';
 
 export default function Sidebar() {
@@ -33,9 +34,9 @@ export default function Sidebar() {
                         <li className="nav-item">
                             <a href="#!" className="nav-link"><span className="pcoded-micon"><i className="feather icon-home"></i></span><span className="pcoded-mtext">Products</span></a>
                             <ul className="pcoded-submenu">
-                                <li><a href="/add-combo-group">Add Combo Group</a></li>
-                                <li><a href="/add-combo-variants">Add Combo Variant</a></li>
-                                <li><a href="/combo-variant-groups">Combo Variant Groups</a></li>
+                                <li><Link to="/add-combo-group">Add Combo Group</Link></li>
+                                <li><Link to="/add-combo-variants">Add Combo Variant</Link></li>
+                                <li><Link to="/combo-variant-groups">Combo Variant Groups</Link></li>
                             </ul>
                         </li>
                     </ul>
